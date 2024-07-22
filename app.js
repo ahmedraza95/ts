@@ -3,8 +3,7 @@ const div = document.querySelector(".value");
 const form = document.querySelector("form");
 form?.addEventListener("submit", (e) => {
     e.preventDefault();
-    console.log(e);
-    const input = (form?.children[0]).value;
+    const input = form?.children[0].value;
     if (div) {
         div.innerHTML = "";
         for (let i = 1; i <= 10; i++) {
